@@ -4,7 +4,8 @@
 
 @section('title_page')
 <i class="fa fa-users"></i>&nbsp;@lang('base_lang.users')&nbsp;
-<i class="fa fa-caret-right"></i>&nbsp;@lang('base_lang.edit')
+<i class="fa fa-caret-right"></i>&nbsp;@lang('base_lang.edit')&nbsp;
+<i class="fa fa-caret-right"></i>&nbsp;{{$user->name ?? ''}}
 @endsection
 
 @section('content_page')

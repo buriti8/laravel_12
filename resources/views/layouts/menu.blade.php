@@ -170,7 +170,7 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer text-center">
-            <img src="{{ asset('img/powered.png?id=new')}}" alt="">
+            <img src="{{ asset('img/powered.png?id=new')}}" alt="" width="40px;">
         </footer>
 
         <!-- Control Sidebar -->

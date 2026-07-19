@@ -29,6 +29,17 @@ body {
     border-color: $primary-hover;
 }
 
+.btn-default {
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border-color: #ddd;
+}
+
 .input-group > .input-group-prepend > .btn,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,

@@ -9,7 +9,6 @@
             <span>
                 <h3 class="login-box-msg text-uppercase pl-0 pr-0">
                     <b>
-                        <span class="text-secondary">SOFASA </span>
                         <span class="text-primary">{{mb_strtoupper(config('app.name'))}}</span>
                     </b>
                 </h3>

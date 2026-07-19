@@ -13,6 +13,7 @@ trait CreatedUpdatedByTrait
     {
         static::creating(function (Model $model) {
             $model->created_by_id = getImpersonateUser();
+            $model->updated_by_id = getImpersonateUser();
         });
 
         static::updating(function (Model $model) {
