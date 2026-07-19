@@ -7,11 +7,9 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Pulse\Facades\Pulse;
-use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,17 +29,6 @@ class AppServiceProvider extends ServiceProvider
         $this->dateTimeBladeDirectives();
 
         Paginator::useBootstrap();
-
-        // Livewire config
-        $appUrl = parse_url(config('app.url'), PHP_URL_PATH);
-
-        Livewire::setScriptRoute(function ($handle) use ($appUrl) {
-            return Route::get("{$appUrl}/livewire/livewire.js", $handle);
-        });
-
-        Livewire::setUpdateRoute(function ($handle) use ($appUrl) {
-            return Route::get("{$appUrl}/livewire/update", $handle);
-        });
 
         Gate::define('viewPulse', function (User $user) {
             return $user->isAdmin();
