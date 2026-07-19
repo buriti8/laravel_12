@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'America/Bogota'),
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'es'),
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
@@ -123,4 +123,23 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Application Settings
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom settings for your application.
+    |
+    */
+
+    'logo' => env('APP_LOGO'),
+    'date_format' => 'Y/m/d',
+    'time_format' => 'H:i',
+    'api_date_format' => 'j/m/Y',
+    'date_time_format' => 'Y/m/d H:i',
+    'js_date_format' => 'YYYY/MM/DD',
+    'js_time_format' => 'HH:mm',
+    'js_date_time_format' => 'YYYY/MM/DD HH:mm',
+    'number_dec_sep' => ',', //Separador decimales
+    'number_grp' => '.', // Agrupador miles
 ];

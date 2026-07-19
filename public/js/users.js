@@ -1,0 +1,1 @@
+(()=>{var r=$("#is_admin"),a=$("#role");r.change(function(r){return e=+$(r.currentTarget).val(),a.prop("disabled",1===e);var e})})();

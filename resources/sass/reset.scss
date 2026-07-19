@@ -1,0 +1,332 @@
+html,
+body {
+    font-family: "Google Sans", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: $white;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: $white;
+    border-color: $primary-hover;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: $white;
+    border-color: $primary-hover;
+}
+
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group
+    > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group
+    > .input-group-append:last-child
+    > .input-group-text:not(:last-child) {
+    background: white;
+}
+
+.logo-xs.brand-image-xl {
+    left: 2px;
+}
+
+.brand-link .brand-image-xs {
+    width: 29%;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17rem;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.form-inline label {
+    justify-content: left;
+}
+
+.select2-container--default .select2-results__option {
+    padding: 1px 12px;
+    font-size: 13px;
+}
+
+span.select2.select2-container.select2-container--default {
+    min-width: 100% !important;
+    max-width: 300px;
+}
+
+.custom-control-label::before {
+    box-shadow: inset 0 0 0.25rem $primary;
+}
+
+.main-footer {
+    padding: 0.25rem;
+}
+
+.navbar {
+    padding: 0.2rem 0.5rem;
+}
+
+.brand-link {
+    padding: 0.5125rem 0.5rem;
+}
+
+.logo-xs.brand-image-xl {
+    top: 3px;
+}
+
+.content-header {
+    padding: 10px 0.5rem;
+}
+
+.swal-button--danger {
+    background-color: $primary;
+    color: $white;
+}
+
+.swal-button--danger:focus {
+    background-color: $primary-hover;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, 0.29);
+}
+
+.swal-button--danger:active {
+    background-color: $primary-hover;
+}
+
+.swal-button--danger:not([disabled]):hover {
+    background-color: $primary-hover;
+}
+
+.swal-button--cancel {
+    color: $black;
+    background-color: $secondary;
+}
+
+.swal-button--cancel:focus {
+    background-color: $secondary-hover;
+}
+
+.swal-button--cancel:active {
+    background-color: $secondary-hover;
+}
+
+.swal-button--cancel:not([disabled]):hover {
+    background-color: $secondary-hover;
+}
+
+.small-box {
+    height: 100%;
+    width: 100%;
+}
+
+.small-box > .small-box-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.small-box .inner p {
+    font-size: 13.5px;
+    width: 80%;
+}
+
+.small-box .inner h3 {
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.small-box .icon i.fas {
+    font-size: 65px;
+}
+
+.custom-file-label:after {
+    content: "Examinar" !important;
+}
+
+.nav-sidebar .menu-open > .nav-link i.right {
+    transform: rotate(90deg);
+}
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+}
+.ui-autocomplete-loading {
+    background: white url("images/ui-anim_basic_16x16.gif") right center
+        no-repeat;
+}
+
+/* workarounds */
+* html .ui-autocomplete {
+    width: 1px;
+} /* without this, the menu expands to 100% in IE6 */
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+    list-style: none;
+    padding: 3px;
+    margin: 0;
+    display: block;
+    background: white;
+    font-size: small;
+    width: auto;
+
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.ui-menu .ui-menu-item:hover {
+    border: 1px solid #ccc;
+}
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 0.2em 0.4em;
+    line-height: 1.5;
+    zoom: 1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    margin: -1px;
+}
+
+.table_collapse a {
+    color: black !important;
+    font-weight: bold;
+}
+
+.table_collapse .table tr {
+    cursor: pointer;
+}
+
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 13px;
+}
+.accordian-body span {
+    color: #a2a2a2 !important;
+}
+
+.select2-container--default .select2-results__option--highlighted,
+.select2-container--default
+    .select2-results__option--highlighted[aria-selected],
+.select2-container--default
+    .select2-results__option--highlighted[aria-selected]:hover {
+    background-color: #9d9d9d;
+    color: #fff;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice {
+    background-color: #8d8d8d;
+    border-color: #606060;
+}
+
+.bg-light {
+    background-color: #ececec !important;
+}
+
+.info-box {
+    padding: 0;
+}
+
+.info-box .info-box-content {
+    padding: 0 5px;
+}
+
+.info-box .info-box-icon {
+    width: 45px;
+}
+
+.bg-light {
+    background-color: #6c757d !important;
+}
+
+.bg-light, .bg-light > a {
+    color: #fff !important;
+}
+
+.table-sm td, .table-sm th {
+    padding: 0.2rem;
+    vertical-align: middle;
+}
+
+.table .thead-gray th {
+    vertical-align: middle;
+}
+
+.table > :not(caption) > * > * {
+    background-color: initial;
+    box-shadow: initial;
+}
+
+.table-bordered>:not(caption) > * {
+    border-width: 0;
+}
+
+.login-box {
+    width: auto !important;
+}
+
+/* Media Queries
+----------------------------------*/
+@media (max-width: 576px) {
+    .login-box,
+    .register-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .small-box .inner p {
+        width: 100%;
+    }
+    table {
+        white-space: nowrap!important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .info-box .info-box-icon {
+        font-size: 1.475rem;
+    }
+}
+
+.input-group i {
+    color: $primary;
+}
+
+.layout-fixed .main-sidebar {
+    background: $primary;
+}

@@ -1,0 +1,25 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+
+//Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "~pc-bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css";
+
+// Plugins
+@import "~select2/dist/css/select2.min.css";
+@import "~tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
+@import "~overlayscrollbars/styles/overlayscrollbars.css";
+
+// Variables
+@import "variables";
+
+//Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+//Reset
+@import "adminlte";
+@import "reset";
+@import "style";
